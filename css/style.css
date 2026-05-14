@@ -482,14 +482,18 @@ footer p{
         align-items: center;
 
         gap: 24px;
+
+        width: 100%;
     }
 
     .project-card{
         width: 100%;
 
-        max-width: 320px;
+        min-width: 0;
 
-        height: 420px;
+        max-width: 380px;
+
+        height: 380px;
     }
 
     /* CONTATO */
