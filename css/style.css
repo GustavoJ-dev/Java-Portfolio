@@ -350,6 +350,11 @@ footer p{
 
 @media (max-width: 768px){
 
+    /* BODY */
+    body{
+        overflow-x: hidden;
+    }
+
     /* HEADER */
     header{
         flex-direction: column;
@@ -358,9 +363,10 @@ footer p{
 
         gap: 20px;
 
-       
+        padding: 20px;
     }
 
+    /* NAV */
     nav{
         display: flex;
 
@@ -369,47 +375,75 @@ footer p{
         justify-content: center;
 
         gap: 14px;
+
+        width: 100%;
     }
 
     nav a{
         margin-left: 0;
+
+        font-size: 15px;
     }
 
     /* HERO */
     .hero{
-        padding-top: 140px;
+        padding: 120px 20px 100px;
+    }
 
-        padding-bottom: 120px;
+    .hero-title{
+        text-align: center;
     }
 
     .hero-title div,
     .hero-title span{
         font-size: 52px;
 
+        line-height: 1.2;
+
         margin-left: 0;
+
+        white-space: normal;
     }
 
     .hero p{
         font-size: 18px;
 
         padding: 0 10px;
+
+        max-width: 100%;
     }
 
+    /* BOTÕES */
     .buttons{
         flex-direction: column;
 
         align-items: center;
     }
 
-    /* SOBRE */
+    .btn-primary,
+    .btn-secondary{
+        width: 100%;
+
+        max-width: 300px;
+
+        text-align: center;
+    }
+
+    /* ABOUT */
+    .about{
+        padding: 100px 20px;
+    }
+
     .container-about{
         grid-template-columns: 1fr;
+
+        gap: 50px;
     }
 
     .about-title,
     .projects-title,
     .contact-title{
-        font-size: 48px;
+        font-size: 42px;
 
         text-align: center;
     }
@@ -419,31 +453,76 @@ footer p{
 
         max-width: 100%;
 
-        padding: 0 20px;
+        padding: 0;
 
-        box-sizing: border-box;
+        text-align: center;
     }
 
+    .about-content p{
+        font-size: 18px;
+    }
+
+    .about-image img{
+        height: auto;
+    }
+
+    /* SKILLS */
     .skills{
         grid-template-columns: 1fr;
     }
 
     /* PROJETOS */
+    .projects{
+        padding: 100px 20px;
+    }
+
     .projects-grid{
         flex-direction: column;
 
         align-items: center;
+
+        gap: 24px;
     }
 
     .project-card{
         width: 100%;
+
+        max-width: 320px;
+
+        height: 420px;
     }
 
     /* CONTATO */
+    .contact{
+        padding: 100px 20px;
+    }
+
+    .contact-text{
+        font-size: 18px;
+    }
+
     .contact-buttons{
         flex-direction: column;
 
         align-items: center;
     }
+
+    .contact-btn{
+        width: 100%;
+
+        max-width: 300px;
+
+        justify-content: center;
+    }
+
+    /* FOOTER */
+    footer{
+        padding: 20px;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
 }
+
 
