@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Cabeçalho com Navegação -->
+    <header>
+        <div class="container">
+            <!-- Branding / Logo -->
+            <div class="logo">
+                <i data-lucide="coffee"></i>
+                Desenvolvedor Java
+            </div>
+
+            <!-- Navegação Principal -->
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Sobre</a>
+                <a href="#">Projetos</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Seção Hero apresentando o Desenvolvedor -->
+    <section class="hero">
+        <div class="container-hero">
+            <h1 class = "hero-title">
+                <div>Olá, eu sou Desenvolvedor</div>
+
+                <span>Java Backend</span>
+            </h1>
+           
+
+           <p>
+            Desenvolvendo aplicações backend sólidas com Java, boas práticas
+            de orientação a objetos e banco de dados relacional.
+           </p>
+
+           <!-- Chamadas para Ação (CTA) -->
+           <div class="buttons">
+            <a href="#" class ="btn-primary">Ver Projetos</a>
+            <a href="#" class = "btn-secondary">Entre em contato</a>
+           </div>
+        </div>
+    </section>
+
+
+    <!-- Seção Sobre Mim -->
+    <section class="about">
+        <h2 class = "about-title">Sobre Mim</h2>
+        <div class="container-about">
+
+            <div class = "about-image">
+                <img src="images/profile.jpg" alt="Foto de Perfil">
+            </div>
+
+            <div class = "about-content">
+                <p>
+                    Sou desenvolvedor java com foco em <span>backend</span>, apaixonado por
+                    Java e pela construção de sistemas bem estruturados.
+                    Tenho sólidos conhecimentos em orientação a objetos,
+                    banco de dados relacional e versionamento com Git e GitHub.
+                </p>
+                <p>
+                    Me posiciono como <span>full stack com ênfase em backend</span> —
+                    entendo o ciclo completo de desenvolvimento, mas minha
+                    maior força está no lado do servidor. Consigo desenvolver
+                    no frontend com HTML, CSS e JavaScript, mesmo que ainda
+                    esteja evoluindo nessa parte. 
+                </p>
+                <!-- SKILLS -->
+             <div class = "skills">
+
+                <div class="skill-card">
+                    <i data-lucide="coffee"></i>
+                    Java
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="server"></i>
+                    Desenvolvimento Backend
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="database"></i>
+                     MySQL
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="git-branch"></i>
+                    Git & GitHub
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="code"></i>
+                    HTML, CSS & JavaScript
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="box"></i>
+                    Orientação a Objetos
+                </div>
+
+             </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section class = "projects">
+        <h2 class = "projects-title">Projetos em Destaque</h2>
+
+        <div class = "projects-grid">
+
+            <!-- Projeto 1 -->
+            <div class="project-card"></div>
+
+            <!-- Projeto 2 -->
+            <div class="project-card"></div>
+
+            <!-- Projeto 3 -->
+            <div class="project-card"></div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class = "contact">
+        <h2 class = "contact-title">Vamos trabalhar juntos?</h2>
+
+        <p class = "contact-text">
+            Estou aberto a oportunidades e colaborações. Sinta-se à vontade para me enviar um email ou conectar-se comigo no LinkedIn.
+        </p>
+
+        <div class = "contact-buttons">
+            <a href = "#" class = "contact-btn">
+                <i data-lucide="git-branch"></i>
+                GitHub
+            </a>
+            <a href = "#" class = "contact-btn">
+                <i data-lucide="briefcase"></i>
+                LinkedIn
+            </a>
+            <a href="#" class = "contact-btn">
+                <i data-lucide="mail"></i>
+                Email
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Gustavo Silva. Todos os direitos reservados.
+        </p>
+    </footer>
+
+
+    <!-- Scripts de Inicialização -->
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
+    </script>
+    <!-- Script Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
