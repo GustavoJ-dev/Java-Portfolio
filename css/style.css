@@ -295,7 +295,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
 }
-/*imagens project 1*/
+/*conteudo do projeto 1*/
 .project1-img{
    height: 68%%;
 }
@@ -308,11 +308,29 @@ nav a:hover{
     border-radius: 20px 20px 0 0;
     object-position: center;
 }
-/*imagens project 2*/
+/*conteudo do projeto' 2*/
 .project2-img{
-    height: 68%;
+    height: 70%;
+}
+.energy-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 20px 0 0;
+    object-position: top;
 }
 
+/*conteudo do projeto 3*/
+.project3-img{
+    height: 70%;
+}
+.calculator-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    
+}
 
 /*hover dos cards*/
 .project-card:hover{
