@@ -295,10 +295,59 @@ nav a:hover{
     display: flex;
     flex-direction: column;
 }
-/*conteudo do projeto 1*/
-.project1-img{
-   height: 68%;
+/*info dos projetos*/
+.project-info{
+   padding: 10px 20px;
 }
+.project-info h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #00AFEF;
+}
+.project-info p{
+    color: #f5f2f2;
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: -7px;
+}
+
+/*span techs*/
+.project-techs{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.project-techs span{
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    color: #cc7832;
+    font-size: 12px;
+    font-weight: bold; 
+    margin-top: -10px;
+}
+/*Links para repo dos projetos*/
+.project-link-container{
+    float: right;
+    display: block;
+    padding: 8px 14px;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    background-color: #f39c12;
+    margin-top: -25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*IMAGENS DO PROJETO*/
+.project-img{
+    height: 68%;
+}
+
+/*IMAGEM do projeto 1*/
 .StudiesHub-img{
     width: 100%;
     height: 100%;
@@ -308,41 +357,8 @@ nav a:hover{
     border-radius: 20px 20px 0 0;
     object-position: center;
 }
-.project-info1{
-   padding: 10px 20px;
-}
-.project-info1 h3{
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-.project-info1 p{
-    color: #808080;
-    margin: 0;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 1.5;
-    margin-top: -7px;
 
-}
-.project1-techs{
-   display: flex;
-   gap: 10px;
-   margin-top: 15px;
-   flex-wrap: wrap;
-}
-.project1-techs span{
-    padding: 6px 12px;
-    border-radius: 20px;
-    border: 1px solid #ffffff;
-    color: #cc7832;
-    font-size: 14px;
-    font-weight: bold; 
-    margin-top: -10px;
-}
-/*conteudo do projeto' 2*/
-.project2-img{
-    height: 70%;
-}
+/*IMAGEM do projeto 2*/
 .energy-img{
     width: 100%;
     height: 100%;
@@ -352,15 +368,11 @@ nav a:hover{
     object-position: top;
 }
 
-/*conteudo do projeto 3*/
-.project3-img{
-    height: 70%;
-}
+/*IMAGEM do projeto 3*/
 .calculator-img{
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
-    
 }
 
 /*hover dos cards*/
