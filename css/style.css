@@ -297,7 +297,7 @@ nav a:hover{
 }
 /*conteudo do projeto 1*/
 .project1-img{
-   height: 68%%;
+   height: 68%;
 }
 .StudiesHub-img{
     width: 100%;
@@ -307,6 +307,37 @@ nav a:hover{
     display: block;
     border-radius: 20px 20px 0 0;
     object-position: center;
+}
+.project-info1{
+   padding: 10px 20px;
+}
+.project-info1 h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-info1 p{
+    color: #808080;
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: -7px;
+
+}
+.project1-techs{
+   display: flex;
+   gap: 10px;
+   margin-top: 15px;
+   flex-wrap: wrap;
+}
+.project1-techs span{
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    color: #cc7832;
+    font-size: 14px;
+    font-weight: bold; 
+    margin-top: -10px;
 }
 /*conteudo do projeto' 2*/
 .project2-img{
