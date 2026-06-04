@@ -1,24 +1,26 @@
 // Smooth scrolling for navigation links
-const nav = document.querySelector('nav');
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelectorAll('nav a');
-navLinks.forEach(link =>{
-    link.addEventListener('click', () => {
+const nav = document.querySelector('nav');//seleciona a tag nav para manipular a classe active
+
+const menuToggle = document.querySelector('.menu-toggle');//seleciona o botão de menu para adicionar o evento de clique
+
+const navLinks = document.querySelectorAll('nav a');//seleciona todos os links de navegação para adicionar o evento de clique
+navLinks.forEach(link =>{//adiciona um evento de clique para cada link de navegação
+    link.addEventListener('click', () => {//quando um link é clicado, o comportamento padrão de navegação é prevenido
         const sectionId = link.getAttribute('href');
-        const section = document.querySelector(sectionId);
-        section.scrollIntoView({ behavior: 'smooth' });
+        const section = document.querySelector(sectionId);//seleciona a seção correspondente ao link clicado usando o atributo href do link
+        section.scrollIntoView({ behavior: 'smooth' });//rola suavemente para a seção correspondente usando o método scrollIntoView com a opção behavior definida como 'smooth'
     })
-    nav.classList.remove('active');
+    nav.classList.remove('active');//remove a classe active da tag nav para fechar o menu mobile após clicar em um link de navegação
 });
 
 /**menu mobile */
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+menuToggle.addEventListener('click', () => {//adiciona um evento de clique ao botão de menu para alternar a classe active na tag nav, permitindo abrir e fechar o menu mobile
+    nav.classList.toggle('active');//alternar a classe active na tag nav, permitindo abrir e fechar o menu mobile
 });
 
 
 // dinamicamente adiciona o conteudo das habilidades
-const skillData ={
+const skillData ={//objeto que armazena os dados das habilidades, onde cada chave representa uma habilidade e contém um título e um texto descritivo
     java: {
         title: "Java",
         text: `
@@ -116,17 +118,18 @@ const skillData ={
     }
 }
 
-const cards = document.querySelectorAll('.skill-card');
-const title = document.getElementById('skill-title');
-const text = document.getElementById('skill-text');
+const cards = document.querySelectorAll('.skill-card');//seleciona todos os elementos com a classe skill-card para adicionar eventos de clique e exibir as informações correspondentes às habilidades
+const title = document.getElementById('skill-title');//seleciona o elemento com o id skill-title para atualizar o título da habilidade exibida
+const text = document.getElementById('skill-text');//seleciona o elemento com o id skill-text para atualizar o texto descritivo da habilidade exibida
 
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        const skill = card.dataset.skill;
+cards.forEach(card => {//adiciona um evento de clique para cada card de habilidade, onde ao clicar em um card, o título e o texto correspondentes à habilidade são atualizados com base nos dados armazenados no objeto skillData
+    card.addEventListener('click', () => {//quando um card é clicado, o valor do atributo data-skill é obtido para identificar qual habilidade foi selecionada, e as informações correspondentes são exibidas atualizando o conteúdo dos elementos title e text
+        const skill = card.dataset.skill;//obtém o valor do atributo data-skill do card clicado para identificar qual habilidade foi selecionada
 
-        if (!skillData[skill]) return;
+        if (!skillData[skill]) return;//verifica se existe um objeto correspondente à habilidade selecionada no skillData, e caso não exista, a função é encerrada sem realizar nenhuma ação
 
-        title.textContent = skillData[skill].title;
-        text.innerHTML = skillData[skill].text;
+        title.textContent = skillData[skill].title;//atualiza o conteúdo do elemento title com o título da habilidade correspondente ao card clicado, obtido a partir do objeto skillData usando a chave skill
+        text.innerHTML = skillData[skill].text;//atualiza o conteúdo do elemento text com o texto descritivo da habilidade correspondente ao card clicado, obtido a partir do objeto skillData usando a chave skill, e utilizando innerHTML para permitir a formatação do texto com tags HTML
     });
 });
+ 
