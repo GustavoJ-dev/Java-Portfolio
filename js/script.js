@@ -182,15 +182,14 @@ cards.forEach(card => {
             //atualiza o conteúdo do elemento title para exibir o título original do resumo profissional, armazenado na variável defaultTitle
             title.textContent = defaultTitle;
             
-            
             //atualiza o conteúdo do elemento text para exibir o texto original do resumo profissional, armazenado na variável defaultText, utilizando innerHTML para permitir a formatação do texto com tags HTML            
             text.innerHTML = defaultText;
-
-
 
             //restaura o conteúdo original do card ativo usando o valor armazenado no atributo data-original-text
             activeCard.innerHTML = activeCard.dataset.originalText;
 
+            //remove a classe active do card ativo para desativá-lo
+            card.classList.remove('active');
 
             //define a variável activeCard como null para indicar que não há mais um card ativo, permitindo que o usuário clique em outro card para exibir as informações correspondentes à habilidade selecionada
             activeCard = null;
@@ -211,6 +210,14 @@ cards.forEach(card => {
             activeCard.innerHTML = activeCard.dataset.originalText;
         }
 
+        //remove a classe active de todos os cards para garantir que apenas o card clicado seja destacado como ativo, permitindo que o usuário identifique facilmente qual habilidade está sendo exibida
+        cards.forEach(c => {
+            //remove a classe active de cada card para garantir que apenas o card clicado seja destacado como ativo
+            c.classList.remove('active');
+        });
+
+        //adiciona a classe active ao card clicado para destacá-lo como ativo, indicando visualmente que as informações correspondentes à habilidade selecionada estão sendo exibidas
+        card.classList.add('active');
 
         //o conteúdo do card clicado é atualizado para exibir a opção de voltar ao resumo, permitindo que o usuário retorne à visualização inicial das habilidades
         card.innerHTML = '← Voltar ao Resumo';

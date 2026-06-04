@@ -267,7 +267,11 @@ nav a:hover{
 .skill-card:hover{
     border-color: #cc7832;
     transform: translateY(-4px);
-    
+}
+/*pro card selecionado*/
+.skill-card.active{
+    transform: translateY(-6px);
+    border-color: #00AFEF;
 }
 /* =========================
    PROJETOS
