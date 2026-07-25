@@ -45,6 +45,11 @@ span{
     color: var(--javacolor);
 }
 
+.container-about span{
+
+    color: #ffbb6da1;
+}
+
 .menu-toggle{
 
     display: none;

@@ -45,100 +45,82 @@ menuToggle.addEventListener('click', () => {
 //objeto que armazena os dados das habilidades, onde cada chave representa uma habilidade e contém um título e um texto descritivo
 const skillData ={
     java: {
-        title: "Java",
-        text: `
-            <p>
-                Possuo conhecimentos em Java aplicados ao desenvolvimento de aplicações orientadas a objetos, utilizando conceitos como encapsulamento, herança, polimorfismo e abstração.
-            </p>
+    title: "Java",
+    text: `
+        <p>
+            Utilizo <span>Java</span> como minha principal linguagem de programação, desenvolvendo aplicações orientadas a objetos e aplicando conceitos como <span>encapsulamento</span>, <span>herança</span>, <span>polimorfismo</span> e <span>abstração</span>, com foco em código organizado, reutilizável e de fácil manutenção.
+        </p>
 
-            <p>
-                Tenho expandido meu conhecimento em Java com Collections Framework, tratamento de exceções, estruturas de dados e algoritmos, além de familiaridade com recursos modernos da linguagem, como Generics, Enums, Records, Lambda Expressions e Functional Interfaces.
-            </p>
-
-            <p>
-               Utilizo Java como minha principal linguagem de programação, aplicando seus conceitos em projetos acadêmicos e pessoais enquanto continuo aprofundando meus conhecimentos no ecossistema Java como por exemplo a API javaFX.
-            </p>
-        
-        `
+        <p>
+            Também possuo experiência com <span>Collections Framework</span>, <span>tratamento de exceções</span>, <span>Java NIO</span>, <span>Streams API</span>, <span>Generics</span>, <span>Enums</span>, <span>Records</span>, <span>Lambda Expressions</span>, <span>Functional Interfaces</span>, além de tecnologias como <span>JavaFX</span> e <span>JDBC</span>, que aplico continuamente em projetos acadêmicos e pessoais.
+        </p>
+    `
     },
-
 
     backend: {
         title: "Backend",
         text: `
-            <p>
-                Tenho interesse em atuar no desenvolvimento backend, participando da construção de aplicações robustas, escaláveis e de fácil manutenção. 
+           <p>
+                Tenho interesse em atuar no <span>desenvolvimento backend</span>, criando aplicações organizadas, escaláveis e de fácil manutenção. Em meus projetos aplico conceitos de <span>Programação Orientada a Objetos</span>, <span>JDBC</span>, integração com <span>bancos de dados relacionais</span> e boas práticas voltadas para qualidade e reutilização de código.
             </p>
 
             <p>
-                Atualmente estudo e aplico conceitos de Programação Orientada a Objetos, estruturas de dados, algoritmos, Collections Framework e boas práticas de desenvolvimento utilizando Java.
-            </p>
-
-            <p>
-               Busco aprofundar meus conhecimentos em tecnologias do ecossistema Java e arquitetura de software, com o objetivo de contribuir para o desenvolvimento de soluções eficientes, alinhadas às necessidades do negócio e capazes de proporcionar uma boa experiência aos usuários.
+                Continuo aprofundando meus conhecimentos em <span>arquitetura de software</span>, <span>ecossistema Java</span> e integração entre aplicações, buscando desenvolver soluções robustas e alinhadas às boas práticas utilizadas no desenvolvimento backend moderno.
             </p>
         `
     },
-
 
     mysql: {
         title: "MySQL",
         text: `
-            <p>
-                Possuo conhecimentos em MySQL adquiridos por meio de estudos e projetos práticos. Tenho familiaridade com a criação e manipulação de bancos de dados relacionais, elaboração de consultas SQL, filtragem e ordenação de dados, além de operações de inserção, atualização e remoção de registros.
+           <p>
+                Possuo conhecimentos em <span>MySQL</span> aplicados à criação e manipulação de <span>bancos de dados relacionais</span>, utilizando <span>SQL</span> para consultas, filtros, ordenação, relacionamentos e operações de inserção, atualização e remoção de dados.
             </p>
 
             <p>
-               Atualmente continuo aprofundando meus conhecimentos em modelagem de dados e no uso de bancos relacionais para o desenvolvimento de aplicações, buscando compreender cada vez mais a integração entre sistemas e persistência de dados.
+                Também possuo experiência na integração entre aplicações <span>Java</span> e bancos de dados por meio do <span>JDBC</span>, além de continuar aprofundando meus conhecimentos em <span>modelagem de dados</span>, persistência e organização das informações para o desenvolvimento de aplicações.
             </p>
         `
     },
-
 
     git: {
         title: "Git e GitHub",
         text: `
-
             <p>
-                Possuo conhecimentos em Git e GitHub para versionamento e gerenciamento de código-fonte, utilizando recursos como criação de repositórios, commits, branches, merges e sincronização de projetos.
+                Utilizo <span>Git</span> e <span>GitHub</span> para versionamento e gerenciamento de código-fonte, trabalhando com <span>repositórios</span>, <span>commits</span>, <span>branches</span>, <span>merges</span> e sincronização de projetos durante o desenvolvimento.
             </p>
 
             <p>
-                Utilizo essas ferramentas para organizar o desenvolvimento dos meus projetos, acompanhar a evolução do código e aplicar boas práticas de controle de versão, garantindo maior segurança e organização durante o processo de desenvolvimento.
+                Essas ferramentas fazem parte do meu fluxo de desenvolvimento, permitindo organizar a evolução dos projetos, gerenciar diferentes versões do código e aplicar boas práticas de <span>controle de versão</span>.
             </p>
-
-
         `
     },
-
 
     desenvolvimentoWeb: {
         title: "Desenvolvimento Web",
         text: `
-            <p>
-               Possuo conhecimentos em HTML, CSS e JavaScript, aplicados no desenvolvimento de páginas web e interfaces para projetos pessoais. Tenho familiaridade com estruturação de conteúdo, estilização de layouts, responsividade e implementação de interações utilizando JavaScript.
+           <p>
+                Possuo conhecimentos em <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> aplicados ao desenvolvimento de interfaces web, com foco na estruturação de páginas, estilização de layouts responsivos e implementação de interações para proporcionar uma melhor experiência ao usuário.
             </p>
 
             <p>
-                Atualmente continuo aprimorando meus conhecimentos em desenvolvimento frontend por meio de estudos e projetos práticos, buscando criar interfaces mais modernas, acessíveis e intuitivas.
+                Atualmente continuo aprimorando minhas habilidades por meio da criação de projetos práticos, explorando conceitos de <span>design responsivo</span>, organização de código e desenvolvimento de interfaces modernas, intuitivas e de fácil manutenção.
             </p>
         `
     },
 
-
     algEstruturaDados: {
         title: "Algoritmos e Estrutura de Dados",
         text: `
-
             <p>
-                Possuo conhecimentos em estruturas de dados e algoritmos, incluindo listas, pilhas, filas, árvores, técnicas de busca e métodos de ordenação. Compreendo a importância da escolha adequada das estruturas para otimizar desempenho, organização e manutenção de aplicações.
+                Possuo conhecimentos em <span>algoritmos</span> e <span>estruturas de dados</span>, aplicando conceitos como <span>listas</span>, <span>pilhas</span>, <span>filas</span>, técnicas de <span>busca</span> e métodos de <span>ordenação</span>, compreendendo sua importância para o desempenho, organização e eficiência das aplicações.
             </p>
 
             <p>
-               Aplico esses conceitos em estudos e projetos práticos, buscando desenvolver soluções mais eficientes e alinhadas às necessidades de cada problema.
+                Aplico esses conceitos no desenvolvimento de projetos e na resolução de problemas práticos, buscando criar soluções mais eficientes, organizadas e com melhor desempenho.
             </p>
         `
-    }
+    }      
 }
 
 //seleciona todos os elementos com a classe skill-card para adicionar eventos de clique e exibir as informações correspondentes às habilidades
