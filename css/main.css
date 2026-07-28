@@ -64,6 +64,14 @@
     
 }
 
+.buttons svg{
+
+    width: 17px;
+    height: 17px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
 .btn-primary, .btn-secondary{
 
     padding: 16px;
@@ -193,4 +201,137 @@
     border-color: var(--skillcolor);
 }
 
+/*seção de projetos*/
 
+.projects{
+
+    padding: 140px 40px;
+    background: var(--sectioncolor);
+}
+
+.projects-grid{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.projects-title{
+
+    text-align: center;
+    font-size: 72px;
+    color: var(--graycolor);
+    margin-bottom: 80px;
+    text-shadow: 0px 0px 8px var(--shadow);
+}
+
+.project-card{
+
+    min-width: 500px;
+    max-width: 500px;
+    height: 500px;
+    background: #383b3b;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info{
+
+    padding: 10px 20px;
+}
+
+.project-img{
+
+    height: 68%;
+}
+
+.StudiesHub-img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.energy-img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.calculator-img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.project-info h3{
+
+    color: var(--skillcolor);
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 5px var(--shadow);
+}
+
+.project-info p{
+
+    text-indent: 2em;
+    color: var(--graycolor);
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.5;
+    text-shadow: 0px 0px 3px var(--shadow);
+}
+
+.project-techs{
+
+    padding: 2px 8px;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.project-techs span{
+
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1px solid #53585e;
+    color: var(--javacolor);
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.project-link-container{
+
+    float: right;
+    display: block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--skillcolor);
+    margin-top: -31px;
+    color: var(--skillcolor);
+    text-shadow: 0px 0px 4px var(--skillcolor);
+    align-items: center;
+}
+
+.project-link-container svg{
+
+    width: 17px;
+    height: 17px;
+    padding-top: 3px;
+    padding-left: 4px;
+}
