@@ -60,6 +60,16 @@ header > .container > nav > a:hover{
     color: #ffc66d;
 }
 
+/*footer*/
+
+footer p{
+   color: #808080;
+   font-size: 15px;
+   letter-spacing: 1px;
+   text-align: center;
+   background: #2b2b2b;
+}
+
 
 
 

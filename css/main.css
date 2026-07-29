@@ -2,6 +2,7 @@
 
     --javacolor: #cc7832;
     --sectioncolor: #2b2b2b;
+    --sectioncolor2: #292828;
     --graycolor:#a9b7c6; 
     --hovercolor:#ffc66d;
     --skillcolor: rgb(124, 87, 155);
@@ -96,7 +97,7 @@
 /* Seção sobre o dev */
 .about{
 
-    background: #292828;
+    background: var(--sectioncolor2);
     padding: 140px 40px;
 }
 
@@ -237,6 +238,12 @@
     transition: 0.3s ease;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 10px var(--shadow);
+}
+
+.project-card:hover{
+
+    transform: translateY(-20px);
 }
 
 .project-info{
@@ -334,4 +341,68 @@
     height: 17px;
     padding-top: 3px;
     padding-left: 4px;
+}
+
+/*Contatos*/
+.contact{
+
+    padding: 140px 40px;
+    background: var(--sectioncolor2);
+    text-align: center;
+}
+
+.contact-title{
+
+    font-size: 72px;
+    color: var(--graycolor);
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 8px var(--shadow);
+
+}
+
+.contact-text{
+
+    font-size: 22px;
+    color: var(--graycolor);
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+    text-shadow: 0px 0px 3px var(--shadow);
+}
+
+.contact-buttons{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-btn{
+
+    width: 105px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 34px;
+    border: 1px solid var(--javacolor);
+    border-radius: 12px;
+    text-decoration: none;
+    text-shadow: 0px 0px 6px var(--shadow);
+    color: var(--graycolor);
+    font-weight: bold;
+    background: #383b3b;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 6px var(--shadow) ;
+}
+
+.contact-btn svg{
+    width: 20px;
+    height: 20px;
+    color: #cc7832;
+}
+
+.contact-btn:hover{
+    color: #ffc66d;
+    transform: translateY(-4px);
 }
