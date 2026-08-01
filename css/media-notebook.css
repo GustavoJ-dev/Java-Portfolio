@@ -1,0 +1,213 @@
+@media (max-width: 1024px){
+
+/*Cabeçalho*/
+    .container{
+
+        padding: 14px 30px;
+    }
+
+    .content-header{
+
+        font-size: 18px;
+    }
+
+    .content-header svg{
+
+        width: 26px;
+        height: 26px;
+    }
+
+    header > .container > nav{
+
+        gap: 14px;
+    }
+
+    header > .container > nav > a{
+
+        font-size: 15px;
+    }
+
+    .hero{
+
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+
+    .hero-title div{
+
+        font-size: 60px;
+    }
+
+    .hero-title span{
+
+        font-size: 82px;
+    }
+
+    .hero p{
+
+        font-size: 18px;
+        line-height: 1.4;
+        max-width: 900px;
+         margin:40px auto 0;
+    }
+
+    .buttons{
+
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .buttons svg{
+
+        width: 14px;
+        height: 14px;
+        padding-top: 2px;
+        padding-left: 2px;
+    }
+
+    .btn-primary, .btn-secondary{
+
+        padding: 16px;
+        width: 140px;
+        font-size: 14px;
+    }
+
+    /* Seção sobre o dev */
+
+    .about{
+
+        padding: 120px 20px;
+    }
+
+    .container-about{
+
+       gap: 0px;
+    }
+
+    .about-title{
+
+        margin-top: -60px;
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+
+
+    .about-image img{
+
+        margin-top: -40px;
+        width: 350px;
+        height: 100%;
+        margin-left: 40px;
+    }
+
+    .skill-description h3{
+
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+
+
+
+    .about-content p{
+
+        font-size: 13px;
+        max-width: 430px;
+    }
+
+    .skills{
+
+        gap: 5px;
+        margin-top: 0px;
+         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skill-card{
+
+        gap: 4px;
+        padding-left: 10px;
+        width: 90px;
+        height: 15px;
+        font-size: 11px;
+    }
+
+    .skill-card svg{
+
+        width: 20px;
+        height: 20px;
+    }
+
+    /*projetos*/
+
+    .projects{
+
+        padding: 120px 20px;
+    }
+
+    .projects-title{
+
+        margin-top: -50px;
+        font-size: 50px;
+    }
+
+
+    .project-card{
+
+        min-width: 300px;
+        height: 400px;
+    }
+
+   .project-info h3{
+
+        font-size: 10px;
+   }
+
+   .project-info p{
+
+        font-size: 10px;
+   }
+
+   .project-techs{
+
+        padding: 1px 4px;
+        gap: 5px;
+        margin-top: 8px;
+   }
+
+   .project-techs span{
+
+        padding: 1px 2px;
+        font-size: 9px;
+   }
+
+   .project-link-container{
+
+        font-size: 10px;
+        border: none;
+
+   }
+
+   .project-link-container svg{
+
+        width: 12px;
+        height: 12px;
+        padding-top: 5px;
+   }
+
+   /*contatos*/
+
+   .contact{
+
+        padding: 80px 20px;
+   }
+
+   .contact-title{
+
+        font-size: 60px;
+   }
+
+   .contact-text{
+
+        font-size: 22px;
+   }
+
+}
