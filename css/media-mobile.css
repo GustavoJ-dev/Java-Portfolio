@@ -142,13 +142,13 @@
     .about-image img{
 
         width: 300px;
-        margin-left: 60px;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
 
     .skill-card{
 
-        max-width: 60px;
+        max-width: 80px;
         padding: 12px;
     }
 
