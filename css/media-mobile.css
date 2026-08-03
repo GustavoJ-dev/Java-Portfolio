@@ -133,15 +133,22 @@
         flex-direction: column;
     }
 
+    .about-content p{
+
+        font-size: 14px;
+    
+    }
+
     .about-image img{
 
         width: 300px;
-        margin-left: 40px;
+        margin-left: 60px;
         margin-bottom: 20px;
     }
 
     .skill-card{
 
+        min-width: 100px;
         padding: 12px;
     }
 
