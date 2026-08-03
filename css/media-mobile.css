@@ -150,6 +150,8 @@
 
         max-width: 80px;
         padding: 12px;
+        margin-left: 10px;
+
     }
 
     /*projetos*/
@@ -197,7 +199,7 @@
 
     .contact-btn{
         
-        width: 80px;
+        width: 100px;
         padding: 10px 14px;
         gap: 6px;
         font-size: 11px;
