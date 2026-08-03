@@ -148,7 +148,7 @@
 
     .skill-card{
 
-        min-width: 100px;
+        max-width: 60px;
         padding: 12px;
     }
 
