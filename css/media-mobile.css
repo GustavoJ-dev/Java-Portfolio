@@ -90,6 +90,7 @@
         font-size: 14px;
         margin-left: 10px;
         margin-right: 10px;
+    
     }
 
     .buttons{
@@ -135,20 +136,78 @@
     .about-image img{
 
         width: 300px;
-        margin-left: 70px;
+        margin-left: 40px;
         margin-bottom: 20px;
     }
 
+    .skill-card{
+
+        padding: 12px;
+    }
+
+    /*projetos*/
+
+    .projects{
+
+        padding: 60px 20px;
+    }
     
+    .projects-grid{
 
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 
+    .projects-title{
 
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
 
+    .project-card{
 
+        padding: 12px;
+    }
 
-    
+    /*contato*/
 
+    .contact{
 
+        padding: 60px 20px;
+    }
 
-   
+    .contact-title{
+
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .contact-text{
+
+        font-size: 14px;
+    }
+
+    .contact-btn{
+        
+        width: 80px;
+        padding: 10px 14px;
+        gap: 6px;
+        font-size: 11px;
+        
+    }
+
+    .contact-btn svg{
+
+        width: 15px;
+        height: 20px;
+    }
+
+    /*footer*/
+
+    footer p{
+
+        font-size: 12px;
+    }
+
 }
