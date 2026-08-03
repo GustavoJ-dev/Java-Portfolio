@@ -128,9 +128,10 @@
 
     .container-about{
 
-        gap: 30px;
-        display: flex;
+       display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
     .about-content p{
@@ -139,19 +140,32 @@
     
     }
 
+    .about-image{
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     .about-image img{
 
         width: 300px;
-        margin: 0 auto;
-        margin-bottom: 20px;
+        margin: 0;
+    }   
+
+    .skills{
+
+        width: 100%;
+        gap: 12px;
     }
 
     .skill-card{
 
-        max-width: 80px;
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
         padding: 12px;
-        margin-left: 10px;
-
+        box-sizing: border-box;
     }
 
     /*projetos*/
