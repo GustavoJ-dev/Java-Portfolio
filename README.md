@@ -37,7 +37,7 @@
 
 **Gustavo de Jesus Silva**
 
-📧 E-mail: gustavo.jesus.silva.dev@gmail.com
+📧 E-mail: [gustavo.jesus.silva.dev@gmail.com]
 
 💼 LinkedIn: [Acessar Perfil](https://www.linkedin.com/in/gustavo-silva-a92b33372)
 
